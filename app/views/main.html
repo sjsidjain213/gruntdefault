@@ -1,0 +1,53 @@
+<div class="container">
+  <h2>My todos</h2>
+
+  <!-- Todos input -->
+  
+<!-- Todos list -->
+<p class="input-group" ng-repeat="todo in todos4">
+  <input type="text" ng-model="todo" class="form-control" ng-readonly="true">
+
+</tr>
+  <span class="input-group-btn">
+    <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+  </span>
+</p
+</div>
+<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">New Entry</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+ <form role="form" ng-submit="addTodo()">
+    <div class="row">
+  
+ <div class="input-group">
+     <input type="text" ng-model="todo5" placeholder="Name" class="form-control">
+     <input type="text" ng-model="dsg" placeholder="designation" class="form-control">
+ <input type="text" ng-model="remark" placeholder="remark" class="form-control">
+          
+	 <span class="input-group-btn">
+          <input type="submit" class="btn btn-primary" value="Add">
+        </span>
+
+	 </div>
+ </div>
+</form>
+
+        <div class="modal-footer">
+		
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
